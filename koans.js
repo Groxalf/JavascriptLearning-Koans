@@ -133,7 +133,7 @@ describe("the JavaScript language", function(){
     });
 
     it("surprises me, NaN is not comparable with NaN", function(){
-        expect(5 / "a").toEqual(5 / "a");
+        expect(5 / "a").not.toBe(5 / "a");
         expect(typeof(NaN)).toEqual("number");
         expect(isNaN(5 / "a")).toBeTruthy();
     });
